@@ -17,5 +17,6 @@ deploy:
   env: "Learndocker-env"
   bucket_name: "elasticbeanstalk-us-east-1-588551023804"
   bucket_path: "learndocker"
-  on: 
-    branch: main
+  branches:
+    only:
+      - main
