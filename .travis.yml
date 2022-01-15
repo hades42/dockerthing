@@ -15,7 +15,8 @@ deploy:
   env: "Learndocker-env"
   bucket_name: "elasticbeanstalk-us-east-1-588551023804"
   bucket_path: "learndocker"
-  on: 
-    branch: main
+  branches:
+    only:
+      - main
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
